@@ -24,5 +24,10 @@ namespace FactoryPattern
         {
             InitializeComponent();
         }
+
+        public void MakeNewComponent()
+        {
+            //Component c = new Component(); take in numbers from UI
+        }
     }
 }
