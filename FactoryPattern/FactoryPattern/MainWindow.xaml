@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="Create a GUI" Height="350" Width="525">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="2" Background="CadetBlue">
+            
+        </StackPanel>
     </Grid>
 </Window>
