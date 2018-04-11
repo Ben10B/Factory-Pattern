@@ -27,6 +27,7 @@ namespace FactoryPattern
             InitializeComponent();
 
             AddedComponents.DataContext = listItems;
+            AddedComponents.Height = CreateGuiWindow.Height;
         }
 
         public void MakeNewComponent()
@@ -53,7 +54,11 @@ namespace FactoryPattern
 
         private void RemoveComponenet_Click(object sender, RoutedEventArgs e)
         {
-
+            if(AddedComponents.Items.Count >= 1)
+            {
+                AddedComponents.Items.RemoveAt(listItems.Count() - 1);
+                listItems.RemoveAt(listItems.Count() - 1);
+            }
         }
     }
 }
