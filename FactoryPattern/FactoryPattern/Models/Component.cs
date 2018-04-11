@@ -9,14 +9,16 @@ namespace FactoryPattern
 {
     public class Component
     {
-        public Component(double h, double w, double x, double y)
+        public Component(string t, double h, double w, double x, double y)
         {
+            this.text = t;
             this.height = h;
             this.width = w;
             this.xOffest = x;
             this.yOffset = y;
         }
 
+        public string text { get; set; }
         public double height { get; set; }
         public double width { get; set; }
         public double xOffest { get; set; }
@@ -24,7 +26,7 @@ namespace FactoryPattern
 
         public override string ToString()
         {
-            return $"Component (H: {height}, W: {width}, X: {xOffest}, Y: {yOffset})";
+            return $"{text} (H: {height}, W: {width}, X: {xOffest}, Y: {yOffset})";
         }
     }
 }

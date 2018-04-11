@@ -44,11 +44,16 @@ namespace FactoryPattern
 
         private void AddComponenet_Click(object sender, RoutedEventArgs e)
         {
-            Component c = new Component(HeightSlider.Value, WidthSlider.Value, XSlider.Value, YSlider.Value);
+            Component c = new Component(TextEntry.Text, HeightSlider.Value, WidthSlider.Value, XSlider.Value, YSlider.Value);
             listItems.Add(c);
             ListBoxItem itm = new ListBoxItem();
             itm.Content = c.ToString();
             AddedComponents.Items.Add(itm);
+        }
+
+        private void RemoveComponenet_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
