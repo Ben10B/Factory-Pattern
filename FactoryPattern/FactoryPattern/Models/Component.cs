@@ -9,19 +9,22 @@ namespace FactoryPattern
 {
     public class Component
     {
-        public Component(double h, double w, double x, double y, Color c)
+        public Component(double h, double w, double x, double y)
         {
             this.height = h;
             this.width = w;
             this.xOffest = x;
             this.yOffset = y;
-            this.color = c;
         }
 
         public double height { get; set; }
         public double width { get; set; }
         public double xOffest { get; set; }
         public double yOffset { get; set; }
-        public Color color { get; set; }
+
+        public override string ToString()
+        {
+            return $"Component (H: {height}, W: {width}, X: {xOffest}, Y: {yOffset})";
+        }
     }
 }
