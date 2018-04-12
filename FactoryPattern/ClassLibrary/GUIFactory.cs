@@ -4,10 +4,9 @@ namespace ClassLibrary
 {
     abstract public class GUIFactory
     {
-        abstract public void setText(Component c);
-        abstract public void setHeight(Component c);
-        abstract public void setWidth(Component c);
-        abstract public void setXPos(Component c);
-        abstract public void setYPos(Component c);
+        abstract public void createButton(Component c);
+        abstract public void createLabel(Component c);
+        abstract public void createTextBox(Component c);
+        abstract public void createListBox(Component c);
     }
 }
