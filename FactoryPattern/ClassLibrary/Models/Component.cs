@@ -1,16 +1,17 @@
-﻿using System;
+﻿using ClassLibrary.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Media;
 
 namespace FactoryPattern
 {
     public class Component
     {
-        public Component(string t, double h, double w, double x, double y)
+        public Component(GUIType g, string t, double h, double w, double x, double y)
         {
+            this.type = g;
             this.text = t;
             this.height = h;
             this.width = w;
@@ -18,6 +19,7 @@ namespace FactoryPattern
             this.yOffset = y;
         }
 
+        public GUIType type { get; set; }
         public string text { get; set; }
         public double height { get; set; }
         public double width { get; set; }
@@ -26,7 +28,7 @@ namespace FactoryPattern
 
         public override string ToString()
         {
-            return $"{text} (H: {height}, W: {width}, X: {xOffest}, Y: {yOffset})";
+            return $"{type} (H: {height}, W: {width}, X: {xOffest}, Y: {yOffset})";
         }
     }
 }
