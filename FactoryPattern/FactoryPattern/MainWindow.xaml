@@ -14,8 +14,8 @@
         <StackPanel Grid.Column="0">
             <ListBox x:Name="AddedComponents" Height="290"></ListBox>
             <DockPanel Height="25">
-                <Button>Convert To HTML</Button>
-                <Button>Convert To C#</Button>
+                <Button Click="CreateHTML_Click">Convert To HTML</Button>
+                <Button Click="CreateWPF_Click">Convert To C#</Button>
             </DockPanel>
         </StackPanel>
         <StackPanel Grid.Column="2" Background="CadetBlue">

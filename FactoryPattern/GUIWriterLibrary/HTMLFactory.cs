@@ -44,7 +44,7 @@ namespace GUIWriterLibrary
             }
             htmlOpening += htmlClosing;
 
-            File.WriteAllText("test.html", htmlOpening);
+            File.WriteAllText("../../../test.html", htmlOpening);
         }
 
         public override void createLabel(Component c)

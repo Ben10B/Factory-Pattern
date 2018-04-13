@@ -1,4 +1,5 @@
-﻿using GUIWriterLibrary.Models;
+﻿using GUIWriterLibrary;
+using GUIWriterLibrary.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -54,6 +55,30 @@ namespace FactoryPattern
                 AddedComponents.Items.RemoveAt(listItems.Count() - 1);
                 listItems.RemoveAt(listItems.Count() - 1);
             }
+        }
+
+        private void CreateWPF_Click(object sender, RoutedEventArgs e)
+        {
+            CSharpFactory wpf = new CSharpFactory();
+            wpf.createGUI(listItems);
+            Reset();
+        }
+
+        private void CreateHTML_Click(object sender, RoutedEventArgs e)
+        {
+            HTMLFactory html = new HTMLFactory();
+            html.createGUI(listItems);
+            Reset();
+        }
+
+        private void Reset()
+        {
+            AddedComponents.Items.Clear();
+            listItems.Clear();
+            HeightSlider.Value = 0;
+            WidthSlider.Value = 0;
+            XSlider.Value = 0;
+            YSlider.Value = 0;
         }
     }
 }
