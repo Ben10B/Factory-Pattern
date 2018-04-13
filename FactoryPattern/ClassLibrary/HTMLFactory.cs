@@ -7,29 +7,29 @@ namespace ClassLibrary
 {
     public class HTMLFactory : GUIFactory
     {
-        public override double setHeight(Component c)
+        public override void createButton(Component c)
         {
-            return c.height;
+            throw new NotImplementedException();
         }
 
-        public override string setText(Component c)
+        public override void createGUI(List<Component> c)
         {
-            return c.text;
+            throw new NotImplementedException();
         }
 
-        public override double setWidth(Component c)
+        public override void createLabel(Component c)
         {
-            return c.width;
+            throw new NotImplementedException();
         }
 
-        public override double setXPos(Component c)
+        public override void createListBox(Component c)
         {
-            return c.xOffest;
+            throw new NotImplementedException();
         }
 
-        public override double setYPos(Component c)
+        public override void createTextBox(Component c)
         {
-            return c.yOffset;
+            throw new NotImplementedException();
         }
     }
 }
