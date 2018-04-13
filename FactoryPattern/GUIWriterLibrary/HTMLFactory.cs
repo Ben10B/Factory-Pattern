@@ -9,8 +9,8 @@ namespace GUIWriterLibrary
 {
     public class HTMLFactory : GUIFactory
     {
-        private string htmlOpening = "<!doctype html>\n<html>\n<head></head>\n<body>";
-        private string htmlClosing = "</body>\n</html>";
+        private string htmlOpening = "<!doctype html>\n<html>\n<head></head>\n<body>\n";
+        private string htmlClosing = "\n</body>\n</html>";
         public override void createButton(Component c)
         {
             string btn = "<button type='button' " +
@@ -49,12 +49,13 @@ namespace GUIWriterLibrary
 
         public override void createLabel(Component c)
         {
-            string label = "<div" +
+            string label = "<div " +
                 "style='position: absolute;" +
                         "width:" + c.width + ";" +
                         "height:" + c.height + ";" +
-                        "top:" + c.xOffest + ";" +
-                        "left:" + c.xOffest + "'>" + c.text + "</div>";
+                        "top:" + c.yOffset + ";" +
+                        "left:" + c.xOffest + ";" +
+                        "background-color: green;'>" + c.text + "</div>";
             htmlOpening += label;
         }
 
