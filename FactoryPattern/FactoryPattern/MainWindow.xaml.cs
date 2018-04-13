@@ -28,12 +28,6 @@ namespace FactoryPattern
             InitializeComponent();
 
             AddedComponents.DataContext = listItems;
-            AddedComponents.Height = CreateGuiWindow.Height;
-        }
-
-        public void MakeNewComponent()
-        {
-            //Component c = new Component(); take in numbers from UI
         }
 
         private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
@@ -46,7 +40,7 @@ namespace FactoryPattern
 
         private void AddComponenet_Click(object sender, RoutedEventArgs e)
         {
-            Component c = new Component((GUIType)TypeEntry.SelectedValue, TextEntry.Text, HeightSlider.Value, WidthSlider.Value, XSlider.Value, YSlider.Value);
+            Component c = new Component((GUIType)TypeEntry.SelectedIndex, TextEntry.Text, HeightSlider.Value, WidthSlider.Value, XSlider.Value, YSlider.Value);
             listItems.Add(c);
             ListBoxItem itm = new ListBoxItem();
             itm.Content = c.ToString();
