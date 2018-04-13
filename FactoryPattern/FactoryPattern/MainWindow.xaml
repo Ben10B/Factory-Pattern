@@ -12,7 +12,11 @@
             <ColumnDefinition Width="5*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0">
-            <ListBox x:Name="AddedComponents"></ListBox>
+            <ListBox x:Name="AddedComponents" Height="290"></ListBox>
+            <DockPanel Height="25">
+                <Button>Convert To HTML</Button>
+                <Button>Convert To C#</Button>
+            </DockPanel>
         </StackPanel>
         <StackPanel Grid.Column="2" Background="CadetBlue">
             <StackPanel Grid.Column="2">
@@ -22,11 +26,11 @@
                 </DockPanel>
                 <DockPanel Margin="0, 5">
                     <Label x:Name="TypeLabel" Content="Type" />
-                    <ComboBox x:Name="TypeEntry" Width="250">
-                        <ComboBoxItem></ComboBoxItem>
-                        <ComboBoxItem></ComboBoxItem>
-                        <ComboBoxItem></ComboBoxItem>
-                        <ComboBoxItem></ComboBoxItem>
+                    <ComboBox x:Name="TypeEntry" Width="250" SelectedIndex="0">
+                        <ComboBoxItem>Button</ComboBoxItem>
+                        <ComboBoxItem>Label</ComboBoxItem>
+                        <ComboBoxItem>Text Box</ComboBoxItem>
+                        <ComboBoxItem>List Box</ComboBoxItem>
                     </ComboBox>
                 </DockPanel>
                 <DockPanel Margin="0, 5">
