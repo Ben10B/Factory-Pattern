@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using GUIWriterLibrary.Models;
 using FactoryPattern;
-using ClassLibrary.Models;
 
-namespace ClassLibrary
+namespace GUIWriterLibrary
 {
     public class CSharpFactory : GUIFactory
     {

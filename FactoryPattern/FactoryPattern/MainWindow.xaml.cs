@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GUIWriterLibrary.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -45,7 +46,7 @@ namespace FactoryPattern
 
         private void AddComponenet_Click(object sender, RoutedEventArgs e)
         {
-            Component c = new Component(TextEntry.Text, HeightSlider.Value, WidthSlider.Value, XSlider.Value, YSlider.Value);
+            Component c = new Component((GUIType)TypeEntry.SelectedValue, TextEntry.Text, HeightSlider.Value, WidthSlider.Value, XSlider.Value, YSlider.Value);
             listItems.Add(c);
             ListBoxItem itm = new ListBoxItem();
             itm.Content = c.ToString();
