@@ -36,29 +36,29 @@ namespace GUIWriterLibrary
                         break;
                 }
             }
-            finalGUI += "</Canvas>";
+            finalGUI += "</Canvas>\n</Window>";
 
             File.WriteAllText("../../../TestingFile.txt", finalGUI);
         }
 
         public override void createButton(Component c)
         {
-            finalGUI += $"<Button Canvas.Left={c.xOffest} Canvas.Top={c.yOffset} Height={c.height} Width={c.width}>{c.text}</Button>\n";
+            finalGUI += $"<Button Canvas.Left='{c.xOffest}' Canvas.Top='{c.yOffset}' Height='{c.height}' Width='{c.width}'>{c.text}</Button>\n";
         }
 
         public override void createLabel(Component c)
         {
-            finalGUI += $"<Label Canvas.Left={c.xOffest} Canvas.Top={c.yOffset} Height={c.height} Width={c.width}>{c.text}</Label>\n";
+            finalGUI += $"<Label Canvas.Left='{c.xOffest}' Canvas.Top='{c.yOffset}' Height='{c.height}' Width='{c.width}'>{c.text}</Label>\n";
         }
 
         public override void createListBox(Component c)
         {
-            finalGUI += $"<ListBox Canvas.Left={c.xOffest} Canvas.Top={c.yOffset} Height={c.height} Width={c.width}>{c.text}</ListBox>\n";
+            finalGUI += $"<ListBox Canvas.Left='{c.xOffest}' Canvas.Top='{c.yOffset}' Height='{c.height}' Width='{c.width}'>{c.text}</ListBox>\n";
         }
 
         public override void createTextBox(Component c)
         {
-            finalGUI += $"<TextBox Canvas.Left={c.xOffest} Canvas.Top={c.yOffset} Height={c.height} Width={c.width}>{c.text}</TextBox>\n";
+            finalGUI += $"<TextBox Canvas.Left='{c.xOffest}' Canvas.Top='{c.yOffset}' Height='{c.height}' Width='{c.width}'>{c.text}</TextBox>\n";
         }
     }
 }
