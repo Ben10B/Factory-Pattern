@@ -75,6 +75,7 @@ namespace FactoryPattern
         {
             AddedComponents.Items.Clear();
             listItems.Clear();
+            TextEntry.Text = "";
             HeightSlider.Value = 0;
             WidthSlider.Value = 0;
             XSlider.Value = 0;
