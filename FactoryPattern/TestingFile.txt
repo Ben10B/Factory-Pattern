@@ -4,9 +4,10 @@ xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'
 xmlns:d='http://schemas.microsoft.com/expression/blend/2008'
 xmlns:mc='http://schemas.openxmlformats.org/markup-compatibility/2006'
 mc:Ignorable='d'
-Title='MainWindow' Height='350' Width='525'>
+Title='MainWindow' Height='1080' Width='1920'
+WindowStartupLocation='Manual'
+Left='0' Top='0'>
 <Canvas>
-<Button Canvas.Left='259' Canvas.Top='0' Height='114' Width='37'>Hello</Button>
-<Label Canvas.Left='1258' Canvas.Top='513' Height='140' Width='37'>Goodbye</Label>
+<Label Canvas.Left='115' Canvas.Top='106' Height='170' Width='776'>hey</Label>
 </Canvas>
 </Window>

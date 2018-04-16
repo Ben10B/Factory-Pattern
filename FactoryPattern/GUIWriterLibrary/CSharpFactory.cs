@@ -14,7 +14,9 @@ namespace GUIWriterLibrary
         "xmlns:d='http://schemas.microsoft.com/expression/blend/2008'\n" +
         "xmlns:mc='http://schemas.openxmlformats.org/markup-compatibility/2006'\n" +
         "mc:Ignorable='d'\n" +
-        "Title='MainWindow' Height='350' Width='525'>\n" +
+        "Title='MainWindow' Height='1080' Width='1920'\n" +
+        "WindowStartupLocation='Manual'\n" +
+        "Left='0' Top='0'>\n" +
         "<Canvas>\n";
         public override void createGUI(List<Component> c)
         {

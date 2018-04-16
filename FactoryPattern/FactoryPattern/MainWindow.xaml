@@ -34,16 +34,16 @@
                     </ComboBox>
                 </DockPanel>
                 <DockPanel Margin="0, 5">
-                    <Label x:Name="HeightLabel" Content="Height" />
-                    <Slider x:Name="HeightSlider" Maximum="1920" Margin="0, 5" Width="230"
-                    TickFrequency="1" ValueChanged="Slider_ValueChanged" IsSnapToTickEnabled="True" />
-                    <TextBox x:Name="HeightAmount" Width="50" Text="0" />
-                </DockPanel>
                 <DockPanel Margin="0, 5">
                     <Label x:Name="WidthLabel" Content="Width" />
-                    <Slider x:Name="WidthSlider" Maximum="1080" Margin="0, 5" Width="230"
+                    <Slider x:Name="WidthSlider" Maximum="1920" Margin="0, 5" Width="230"
                     TickFrequency="1" ValueChanged="Slider_ValueChanged" IsSnapToTickEnabled="True" />
                     <TextBox x:Name="WidthAmount" Width="50" Text="0" />
+                </DockPanel>
+                    <Label x:Name="HeightLabel" Content="Height" />
+                    <Slider x:Name="HeightSlider" Maximum="1080" Margin="0, 5" Width="230"
+                    TickFrequency="1" ValueChanged="Slider_ValueChanged" IsSnapToTickEnabled="True" />
+                    <TextBox x:Name="HeightAmount" Width="50" Text="0" />
                 </DockPanel>
                 <DockPanel Margin="0, 5">
                     <Label x:Name="XLabel" Content="X Position" />
