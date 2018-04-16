@@ -43,7 +43,8 @@ namespace GUIWriterLibrary
             }
             htmlOpening += htmlClosing;
 
-            File.WriteAllText("../../../test.html", htmlOpening);
+            File.WriteAllText("test.html", htmlOpening);
+            System.Diagnostics.Process.Start("test.html");
         }
 
         public override void createLabel(Component c)
