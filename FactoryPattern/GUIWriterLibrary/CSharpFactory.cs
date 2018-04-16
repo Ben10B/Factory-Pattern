@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using GUIWriterLibrary.Models;
 using System.IO;
+using System.Windows.Controls;
+using System.Windows;
 
 namespace GUIWriterLibrary
 {
@@ -39,7 +41,9 @@ namespace GUIWriterLibrary
             }
             finalGUI += "</Canvas>\n</Window>";
 
-            File.WriteAllText("../../../TestingFile.txt", finalGUI);
+            File.WriteAllText("TestingFile.xaml", finalGUI);
+            //System.Diagnostics.Process.Start("TestingFile.xaml");
+            
         }
 
         public override void createButton(Component c)

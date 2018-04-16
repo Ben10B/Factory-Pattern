@@ -98,6 +98,10 @@
       <Project>{c53722ea-6ce9-4b7c-a236-0211de4cb3ab}</Project>
       <Name>GUIWriterLibrary</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WpfApp1\WpfApp1.csproj">
+      <Project>{e892839e-cdc9-4325-9873-0b6eb3eed8e4}</Project>
+      <Name>WpfApp1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
