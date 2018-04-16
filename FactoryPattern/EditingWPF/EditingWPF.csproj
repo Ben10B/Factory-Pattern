@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3528ABAF-611D-4B3B-B888-8FB14FAA6FC7}</ProjectGuid>
+    <ProjectGuid>{4455222C-3C57-4E5C-BD82-F8BF84671E7F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>FactoryPattern</RootNamespace>
-    <AssemblyName>FactoryPattern</AssemblyName>
+    <RootNamespace>EditingWPF</RootNamespace>
+    <AssemblyName>EditingWPF</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -92,16 +92,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\EditingWPF\EditingWPF.csproj">
-      <Project>{4455222c-3c57-4e5c-bd82-f8bf84671e7f}</Project>
-      <Name>EditingWPF</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\GUIWriterLibrary\GUIWriterLibrary.csproj">
-      <Project>{c53722ea-6ce9-4b7c-a236-0211de4cb3ab}</Project>
-      <Name>GUIWriterLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

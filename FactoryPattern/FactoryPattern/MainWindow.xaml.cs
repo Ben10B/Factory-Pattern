@@ -62,6 +62,10 @@ namespace FactoryPattern
         {
             CSharpFactory wpf = new CSharpFactory();
             wpf.createGUI(listItems);
+            EditingWPF.MainWindow emw = new EditingWPF.MainWindow();
+            MainWindow mw = new MainWindow();
+            mw.Hide();
+            emw.Show();
             Reset();
         }
 

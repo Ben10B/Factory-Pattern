@@ -7,11 +7,12 @@ namespace GUIWriterLibrary
 {
     public class CSharpFactory : GUIFactory
     {
-        public string finalGUI = "<Window x:Class='tobedeleted.MainWindow'\n" +
+        public string finalGUI = "<Window x:Class='EditingWPF.MainWindow'\n" +
         "xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'\n" +
         "xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'\n" +
         "xmlns:d='http://schemas.microsoft.com/expression/blend/2008'\n" +
         "xmlns:mc='http://schemas.openxmlformats.org/markup-compatibility/2006'\n" +
+        "xmlns:local='clr-namespace:EditingWPF'\n" +
         "mc:Ignorable='d'\n" +
         "Title='MainWindow' Height='1080' Width='1920'\n" +
         "WindowStartupLocation='Manual'\n" +
@@ -39,7 +40,7 @@ namespace GUIWriterLibrary
             }
             finalGUI += "</Canvas>\n</Window>";
 
-            File.WriteAllText("../../../TestingFile.txt", finalGUI);
+            File.WriteAllText("../../../EditingWPF/MainWindow.xaml", finalGUI);
         }
 
         public override void createButton(Component c)

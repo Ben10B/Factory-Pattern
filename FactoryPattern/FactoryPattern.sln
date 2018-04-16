@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPattern", "FactoryPa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUIWriterLibrary", "GUIWriterLibrary\GUIWriterLibrary.csproj", "{C53722EA-6CE9-4B7C-A236-0211DE4CB3AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EditingWPF", "EditingWPF\EditingWPF.csproj", "{4455222C-3C57-4E5C-BD82-F8BF84671E7F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C53722EA-6CE9-4B7C-A236-0211DE4CB3AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C53722EA-6CE9-4B7C-A236-0211DE4CB3AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C53722EA-6CE9-4B7C-A236-0211DE4CB3AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4455222C-3C57-4E5C-BD82-F8BF84671E7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4455222C-3C57-4E5C-BD82-F8BF84671E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4455222C-3C57-4E5C-BD82-F8BF84671E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4455222C-3C57-4E5C-BD82-F8BF84671E7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
