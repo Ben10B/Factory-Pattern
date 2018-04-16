@@ -8,6 +8,7 @@ Title='MainWindow' Height='1080' Width='1920'
 WindowStartupLocation='Manual'
 Left='0' Top='0'>
 <Canvas>
-<Label Canvas.Left='115' Canvas.Top='106' Height='170' Width='776'>hey</Label>
+<Button Canvas.Left='115' Canvas.Top='170' Height='382' Width='890'></Button>
+<TextBox Canvas.Left='115' Canvas.Top='170' Height='382' Width='890'></TextBox>
 </Canvas>
 </Window>

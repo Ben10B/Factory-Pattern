@@ -43,8 +43,17 @@
     <Compile Include="CSharpFactory.cs" />
     <Compile Include="GUIFactory.cs" />
     <Compile Include="HTMLFactory.cs" />
+    <Compile Include="Models\Button.cs" />
+    <Compile Include="Models\ButtonFactory.cs" />
     <Compile Include="Models\Component.cs" />
+    <Compile Include="Models\ComponentFactory.cs" />
     <Compile Include="Models\GUIType.cs" />
+    <Compile Include="Models\Label.cs" />
+    <Compile Include="Models\LabelFactory.cs" />
+    <Compile Include="Models\ListBox.cs" />
+    <Compile Include="Models\ListBoxFactory.cs" />
+    <Compile Include="Models\TextBox.cs" />
+    <Compile Include="Models\TextBoxFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -26,7 +26,7 @@
                 </DockPanel>
                 <DockPanel Margin="0, 5">
                     <Label x:Name="TypeLabel" Content="Type" />
-                    <ComboBox x:Name="TypeEntry" Width="250" SelectedIndex="0">
+                    <ComboBox x:Name="TypeEntry" Width="250" SelectedIndex="0" SelectionChanged="TypeEntry_SelectionChanged">
                         <ComboBoxItem>Button</ComboBoxItem>
                         <ComboBoxItem>Label</ComboBoxItem>
                         <ComboBoxItem>Text Box</ComboBoxItem>
@@ -34,12 +34,12 @@
                     </ComboBox>
                 </DockPanel>
                 <DockPanel Margin="0, 5">
-                <DockPanel Margin="0, 5">
                     <Label x:Name="WidthLabel" Content="Width" />
                     <Slider x:Name="WidthSlider" Maximum="1920" Margin="0, 5" Width="230"
                     TickFrequency="1" ValueChanged="Slider_ValueChanged" IsSnapToTickEnabled="True" />
                     <TextBox x:Name="WidthAmount" Width="50" Text="0" />
                 </DockPanel>
+                <DockPanel>
                     <Label x:Name="HeightLabel" Content="Height" />
                     <Slider x:Name="HeightSlider" Maximum="1080" Margin="0, 5" Width="230"
                     TickFrequency="1" ValueChanged="Slider_ValueChanged" IsSnapToTickEnabled="True" />

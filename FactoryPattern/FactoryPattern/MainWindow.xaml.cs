@@ -23,6 +23,7 @@ namespace FactoryPattern
     public partial class MainWindow : Window
     {
         public List<Component> listItems = new List<Component>();
+        ComponentFactory cf = new ButtonFactory();
 
         public MainWindow()
         {
@@ -41,7 +42,7 @@ namespace FactoryPattern
 
         private void AddComponenet_Click(object sender, RoutedEventArgs e)
         {
-            Component c = new Component((GUIType)TypeEntry.SelectedIndex, TextEntry.Text, HeightSlider.Value, WidthSlider.Value, XSlider.Value, YSlider.Value);
+            Component c = cf.createComponent((GUIType)TypeEntry.SelectedIndex, TextEntry.Text, HeightSlider.Value, WidthSlider.Value, XSlider.Value, YSlider.Value);
             listItems.Add(c);
             ListBoxItem itm = new ListBoxItem();
             itm.Content = c.ToString();
@@ -80,6 +81,25 @@ namespace FactoryPattern
             WidthSlider.Value = 0;
             XSlider.Value = 0;
             YSlider.Value = 0;
+        }
+
+        private void TypeEntry_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            switch (TypeEntry.SelectedIndex)
+            {
+                case 0:
+                    cf = new ButtonFactory();
+                    break;
+                case 1:
+                    cf = new LabelFactory();
+                    break;
+                case 2:
+                    cf = new TextBoxFactory();
+                    break;
+                case 3:
+                    cf = new ListBoxFactory();
+                    break;
+            }
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using FactoryPattern;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace GUIWriterLibrary
 {

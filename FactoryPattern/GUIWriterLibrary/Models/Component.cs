@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FactoryPattern
+namespace GUIWriterLibrary
 {
-    public class Component
+    public abstract class Component
     {
         public Component(GUIType g, string t, double h, double w, double x, double y)
         {

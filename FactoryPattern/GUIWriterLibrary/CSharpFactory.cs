@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using GUIWriterLibrary.Models;
-using FactoryPattern;
 using System.IO;
 
 namespace GUIWriterLibrary
