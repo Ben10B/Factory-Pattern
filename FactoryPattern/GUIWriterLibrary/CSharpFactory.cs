@@ -4,6 +4,7 @@ using GUIWriterLibrary.Models;
 using System.IO;
 using System.Windows.Controls;
 using System.Windows;
+using System.Diagnostics;
 
 namespace GUIWriterLibrary
 {
@@ -42,7 +43,7 @@ namespace GUIWriterLibrary
             }
             finalGUI += "</Canvas>\n</Window>";
 
-            File.WriteAllText("../../../TestingFile.txt", finalGUI);
+            File.WriteAllText("../../../EditingWPF/MainWindow.xaml", finalGUI);
         }
 
         public override void createButton(Component c)
@@ -66,5 +67,3 @@ namespace GUIWriterLibrary
         }
     }
 }
-
-            File.WriteAllText("../../../EditingWPF/MainWindow.xaml", finalGUI);

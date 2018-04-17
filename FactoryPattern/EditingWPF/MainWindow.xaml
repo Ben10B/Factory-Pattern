@@ -9,6 +9,6 @@ Title='MainWindow' Height='1080' Width='1920'
 WindowStartupLocation='Manual'
 Left='0' Top='0'>
 <Canvas>
-<Button Canvas.Left='351' Canvas.Top='118' Height='101' Width='430'></Button>
+<Button Canvas.Left='0' Canvas.Top='190' Height='236' Width='123'>6</Button>
 </Canvas>
 </Window>

@@ -11,7 +11,6 @@
             <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="5*"/>
         </Grid.ColumnDefinitions>
-        <Frame Source="/TestingFile.xaml" NavigationUIVisibility="Hidden"/>
         <StackPanel Grid.Column="0">
             <ListBox x:Name="AddedComponents" Height="290"></ListBox>
             <DockPanel Height="25">

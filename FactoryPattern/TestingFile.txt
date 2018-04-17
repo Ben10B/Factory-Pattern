@@ -1,14 +1,14 @@
-<Window x:Class='tobedeleted.MainWindow'
+<Window x:Class='EditingWPF.MainWindow'
 xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
 xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'
 xmlns:d='http://schemas.microsoft.com/expression/blend/2008'
 xmlns:mc='http://schemas.openxmlformats.org/markup-compatibility/2006'
+xmlns:local='clr-namespace:EditingWPF'
 mc:Ignorable='d'
 Title='MainWindow' Height='1080' Width='1920'
 WindowStartupLocation='Manual'
 Left='0' Top='0'>
 <Canvas>
-<Button Canvas.Left='115' Canvas.Top='170' Height='382' Width='890'></Button>
-<TextBox Canvas.Left='115' Canvas.Top='170' Height='382' Width='890'></TextBox>
+<Button Canvas.Left='0' Canvas.Top='0' Height='52' Width='167'>kjn</Button>
 </Canvas>
 </Window>
